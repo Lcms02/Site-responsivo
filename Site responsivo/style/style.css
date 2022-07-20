@@ -1,0 +1,331 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #3B3C40;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #010326;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body, ul{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color:#010326;
+  text-decoration: none;
+  font-family:sans-serif ;
+}
+
+ul li a:hover{
+  color: #C6C6C6;
+  background-color: #010326;
+}
+
+#logo{
+  width: 7%;
+  float: left;
+  margin-top: 0.5vw;
+  margin-left: 7vw;
+
+}
+
+#logo img{
+  width: 100%;
+}
+
+#header h1{
+  margin-left: -8vw;
+}
+
+#header{
+  box-sizing: border-box;
+  height: 14vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #5A7E8C;
+  justify-content: space-between;
+}
+
+#menu{
+
+  display: flex;
+  list-style: none;
+  gap: 7vw;
+  font-size: 1.5vw;
+}
+
+#menu a{
+  display: block;
+  padding: .5rem;
+}
+
+.icon{
+  display: none;
+}
+
+#foco {
+  width: 100%;
+  height: 574px;
+  background: url("../media/banne1.jpg") no-repeat center;
+  background-size: cover;
+
+}
+
+#preco{
+  width: 100%;
+  height: 20vh;
+  background-color: #0D0D0D;
+  text-align: center;
+  font-size: 1.1vw;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.propaganda h2{
+  color: #C6C6C6;
+  float: left;
+  padding-top: 7vh;
+  padding-left: 8% ;
+}
+
+#ultimo{
+  padding-top: 7.8vh;
+}
+
+#relatos{
+  padding-bottom: 8vh;
+  background-color: #B4CED9;
+}
+
+#relatos h1{
+  padding-left: 7vw;  
+  padding-top: 9vh;
+  padding-bottom: 9vh;
+}
+.relato{
+  padding-bottom: 3vh;
+  width: 23%;
+  display:inline-block;
+  margin-left: 7vw;
+}
+
+.imagem{
+  width: 100%;
+
+}
+
+.imagem img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.titulo h2{
+  text-align: center;
+  font-size: 1.12em;
+  color: #0D0D0D;
+}
+
+.descricao{
+  text-align: center;
+  color: #0D0D0D;
+}
+
+footer{
+  background-color: #5A7E8C;
+  padding-top: 5em;
+  padding-bottom: 40px;
+  border-top: 5px solid #0D0D0D ;
+}
+
+footer h2, footer p, footer span{
+  color: #0D0D0D;
+}
+
+footer h2{
+  font-weight: 400;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li{
+  list-style: none;
+}
+
+.footer-box{
+  width: 22%;
+  padding-left: 7vw;
+  float: left;
+}
+
+footer .wrapper:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+footer i img{
+  width: 2vw;
+  height: 4vh;
+  float: left;
+  padding: 0.5vh;
+  padding-left: 1.1vw;
+}
+
+.footer-list{
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+
+  .icon{
+    display: block;
+  }
+  .nav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+
+  nav #menu {
+    display: none;
+  }
+
+  .nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  #relatos{
+    padding-bottom: 5vh;
+    background-color: #B4CED9;
+  }
+  
+  #relatos h1{
+    padding-left: 7vw;  
+    padding-top: 9vh;
+    padding-bottom: 9vh;
+  }
+  .relato{
+    padding-bottom: 3vh;
+    width: 27%;
+    display:inline-block;
+    margin-left: 15vw;
+  }
+  
+  .imagem{
+    width: 100%;
+  
+  }
+  
+  .imagem img{
+    width: 100%;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .titulo h2{
+    text-align: center;
+    font-size: 100%;
+    color: #0D0D0D;
+  }
+  
+  .descricao{
+    font-size: 100%;
+    text-align: center;
+    color: #0D0D0D;
+  }
+
+  footer{
+    background-color: #5A7E8C;
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px solid #0D0D0D ;
+  }
+  
+  footer h2, footer p, footer span{
+    color: #0D0D0D;
+    font-size: small;
+  }
+  
+  footer h2{
+    font-weight: 400;
+  }
+  
+  footer ul {
+    padding: 0;
+  }
+  
+  footer li{
+    list-style: none;
+  }
+
+  .footer-box{
+    width: 22%;
+    padding-left: 10vw;
+    float: left;
+  }
+
+  .footer-list{
+
+  } 
+  
+  footer .wrapper:after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+  
+  footer i img{
+    width: 1vw;
+    height: 2vh;
+    float: left;
+    padding: 0.5vh;
+    padding: 0.5vh;
+  }
+
+}
